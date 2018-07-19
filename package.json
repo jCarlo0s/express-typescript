@@ -1,0 +1,19 @@
+{
+  "name": "express-typescript",
+  "version": "1.0.0",
+  "description": "Express.js and Typescript demo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jCarlo0s/express-typescript.git"
+  },
+  "author": "jCarlo0s",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jCarlo0s/express-typescript/issues"
+  },
+  "homepage": "https://github.com/jCarlo0s/express-typescript#readme"
+}
