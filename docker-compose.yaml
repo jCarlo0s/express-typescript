@@ -1,0 +1,21 @@
+version: "2"
+services:
+  nginx:
+    image: "nginx"
+    links: 
+      - expressapp
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "8100:80"
+  expressapp:
+    image: "node:8"
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app
+    expose:
+      - "9090"
+    command: "npm start"
